@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>打印订单</title>
+    {% load static %}
+    <script src="{% static 'jquery.min.js' %}"></script>
+</head>
+<body>
+
+  <form  id="fileOperationsForm" method="post" enctype="multipart/form-data" action="/upload/" target="file_upload_return">
+        <label for="up1" >上传文件:</label>
+        <input type="file" name="file" />
+        <input type="submit" value="上传" />
+    </form>
+
+
+
+</body>
+</html>

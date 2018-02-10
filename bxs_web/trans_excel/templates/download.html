@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下载文件</title>
+</head>
+<body>
+
+
+
+
+
+<h1>点击下载文件</h1>
+{% load static %}
+
+{% for l in down_list %}
+    {% if l == 'Error!!!' %}
+     <h2>网络波动，请重试！请检查文件格式是否正确!</h2>
+        {% else %}
+<p>
+    <a href="{% static l %}" >{{ l }}</a>
+</p>
+    {% endif %}
+
+{% endfor %}
+
+</body>
+</html>
